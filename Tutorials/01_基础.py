@@ -18,6 +18,13 @@ a = "aaaa %s te %sst"
 print a % (1,2)
 print 10 * 'a'
 
+
+print '----------------输入---------------'
+#test_raw_input = raw_input('This is raw_input:')
+#test_input = input('This is input:')
+#input() 本质上还是使用 raw_input() 来实现的，只是调用完 raw_input() 之后再调用 eval() 函数，
+#所以，你甚至可以将表达式作为 input() 的参数，并且它会计算表达式的值并返回它。
+
 print '----------------输出---------------'
 #打印
 spaces = ' ' * 25
