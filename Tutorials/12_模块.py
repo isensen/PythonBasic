@@ -24,6 +24,7 @@ import sys
 
 def test():
     args = sys.argv  #argv 用list 存储命令行调用参数,至少会有一个,并且永远是文件名 12_模块.py
+    print args
     if len(args) == 1:
         print 'Hello world!'
     elif len(args) == 2:

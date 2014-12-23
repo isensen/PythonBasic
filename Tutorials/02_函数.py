@@ -8,6 +8,7 @@ print '--------------Function-------------'
 #函数名其实就是指向一个函数对象的引用
 #没有 return 语句的话,函数也会返回结果,只是结果是 None
 # return None 可以简写为 return
+# 和javascript 类似
 def my_abs(x):
     if not isinstance(x, (int, float)):
         raise TypeError('bad operand type')

@@ -17,6 +17,7 @@ __author__ = "i3342th"
 # 创建一个生成器,有很多种方法 , 第一种方法很简单,只要把一个列表生成器的[] 改成 ()
 
 
+#L = [x * x for x in range(100000000)] Memory Error
 L = [x * x for x in range(10)] #列表生成
 g = (x * x for x in range(10)) #生成器
 
