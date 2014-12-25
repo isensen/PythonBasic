@@ -31,6 +31,16 @@ class Student(object):
 print Student('isensen') #Student object (name: isensen)
 s = Student('isensen')
 
+
+class Field(object):
+    def __init__(self, name, column_type):
+        self.name = name
+        self.column_type = column_type
+    def __str__(self):
+        return '<%s:%s>' % (self.__class__.__name__, self.name)
+a = Field('test','long')
+print a
+
 # >>> s 如果这样在控制台输出变量,会发现还是不好看
 # 因为直接显示变量调用的不是 __str__(),而是 __repr__(),
 # 两者的区别是  __str__()返回用户看到的字符串,而 __repr__()返回程序开发者看到的字符串
