@@ -1,9 +1,9 @@
 #coding=utf-8
-'''
+"""
     连接到数据库
     打开游标Cursor
     通过Cursor执行SQL语句
-'''
+"""
 import sqlite3
 
 __author__ = 'isenen'
@@ -32,7 +32,7 @@ print values
 
 
 cursor.close()
-
+conn.commit()
 conn.close()
 #================================查询==========================================
 
@@ -44,7 +44,7 @@ cursor.execute('select * from user where id =?', '1')
 
 values = cursor.fetchall()
 
-print values #这里搞不懂了,为什么这里输出 是 [] 空的???关闭再重新连接就查不着了
+print values
 
 cursor.close()
 
